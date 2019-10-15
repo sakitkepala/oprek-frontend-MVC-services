@@ -5,7 +5,7 @@
  */
 
 class User {
-  constructor({ nama, umur, komplet } = { komplet: false }) {
+  constructor ({ nama, umur, komplet } = { komplet: false }) {
     this.id = this.uuidv4();
     this.nama = nama;
     this.umur = umur;
