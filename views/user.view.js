@@ -4,7 +4,7 @@
  * Representasi visual dari modelnya
  */
 
-class View {
+class UserView {
   constructor () {
     this.app = this.getElement('#root');
 

@@ -19,7 +19,7 @@ class UserService {
     localStorage.setItem('penggunas', JSON.stringify(penggunas));
   }
 
-  add (pengguna) {
+  tambah (pengguna) {
     this.penggunas.push(new User(pengguna));
 
     this._commit(this.penggunas);
