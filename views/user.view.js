@@ -106,7 +106,7 @@ class UserView {
 
           const coretUmur = this.createElement('s');
           coretUmur.textContent = pengguna.umur;
-          spanUmur.apend(coretUmur);
+          spanUmur.append(coretUmur);
         } else {
           spanPengguna.textContent = pengguna.nama;
           spanUmur.textContent = pengguna.umur;
