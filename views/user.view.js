@@ -45,8 +45,8 @@ class UserView {
   }
 
   _resetInput () {
-    this._teksNama.value = '';
-    this._teksUmur.value = '';
+    this.inputNama.value = '';
+    this.inputUmur.value = '';
   }
 
   createInput (
@@ -108,13 +108,13 @@ class UserView {
           coretUmur.textContent = pengguna.umur;
           spanUmur.apend(coretUmur);
         } else {
-          spanNama.textContent = pengguna.nama;
+          spanPengguna.textContent = pengguna.nama;
           spanUmur.textContent = pengguna.umur;
         }
 
         const tombolDelete = this.createElement('button', 'hapus');
         tombolDelete.textContent = 'Hapus';
-        li.append(checkbox, spanNama, spanUmur, tombolDelete);
+        li.append(checkbox, spanPengguna, spanUmur, tombolDelete);
 
         this.listPengguna.append(li);
       });
