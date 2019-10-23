@@ -7,7 +7,7 @@
  * @param view
  */
 
-class Controller {
+class UserController {
   constructor (userService, userView) {
     this.userService = userService;
     this.userView = userView;
