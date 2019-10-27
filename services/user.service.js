@@ -46,7 +46,7 @@ class UserService {
 
   toggle (_id) {
     this.penggunas = this.penggunas.map(pengguna =>
-      pengguna.id === _id ? new User({ ...pengguna, komplet: !user.komplet }) : pengguna
+      pengguna.id === _id ? new User({ ...pengguna, komplet: !pengguna.komplet }) : pengguna
     );
 
     this._commit(this.penggunas);
